@@ -34,20 +34,24 @@ git merge branch 0
 ## First steps in building FullStackPPMTool:
 
 1. Added **Project** object under _domain_
+
 2. Added **ProjectRepository** object under _repositories_ (added **findAllById** method)
+
 3. Added **ProjectService** object under _services_ (added **saveOrUpdateProject** method and wired **ProjectRepository** instance)
+
 4. Added **ProjectController** object under _web_ (added **createNewProject** method and wired **ProjectService** instance)
 
 ## Starting SpringBoot application and testing REST API
 
-1. Run _com.local.ppmtool.SpringBootPPMToolApplication.java_ as **Spring Boot App**
+1. Run _com.local.ppmtool.PPMToolApplication_ as **Spring Boot App**
+
 2. Make a REST API call using CURL, PostMan, or SoapUI:
 
 ```
 curl -d '{"projectName": "My First Project","projectIdentifier": "MYID","description": "A sample project"}' -H "Content-Type: application/json" -X POST http://localhost:8080/api/project
 ```
 
-3. Run H2 Console and confirm project entry was successfull:
+3. Run H2 Console and confirm project entry was successful:
 
 ```
 http://localhost:8080/h2-console
