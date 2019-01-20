@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringBootPPMToolApplication {
+public class PPMToolApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringBootPPMToolApplication.class, args);
+		SpringApplication.run(PPMToolApplication.class, args);
 	}
 
 }
