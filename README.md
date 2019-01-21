@@ -45,15 +45,19 @@ git merge branch 0
 5. Modified **Project** object to add data validation for **projectName** and **projectIdentifier**
 6. Added custom validation using **MapValidationErrorService** under _services_
 7. Added custom error handling using **CustomResponseEntityHandler** under _exceptions_
+8. Added remaining CRUD operations for **Project"" entity
 
 ## Starting SpringBoot application and testing REST API
 
 1. Run _com.local.ppmtool.PPMToolApplication_ as **Spring Boot App**
 
-2. Make a REST API call using CURL, PostMan, or SoapUI:
+2. Make the REST API call(s) using CURL, PostMan, or SoapUI:
 
 ```
-curl -d '{"projectName": "My First Project","projectIdentifier": "MYID","description": "A sample project"}' -H "Content-Type: application/json" -X POST http://localhost:8080/api/project
+POST http://localhost:8080/api/project
+GET http://localhost:8080/api/project/{projectId}
+GET http://localhost:8080/api/project/all
+DELETE http://localhost:8080/api/project/{projectId}
 ```
 
 3. Run H2 Console and confirm project entry was successful:
