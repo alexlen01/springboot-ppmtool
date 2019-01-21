@@ -31,15 +31,20 @@ git checkout master
 git merge branch 0
 ```
 
-## First steps in building FullStackPPMTool:
+## Daily checkpoints while building FullStackPPMTool:
+
+### Day 1
 
 1. Added **Project** object under _domain_
-
 2. Added **ProjectRepository** object under _repositories_ (added **findAllById** method)
-
 3. Added **ProjectService** object under _services_ (added **saveOrUpdateProject** method and wired **ProjectRepository** instance)
-
 4. Added **ProjectController** object under _web_ (added **createNewProject** method and wired **ProjectService** instance)
+
+### Day 2
+
+5. Modified **Project** object to add data validation for **projectName** and **projectIdentifier**
+6. Added custom validation using **MapValidationErrorService** under _services_
+7. Added custom error handling using **CustomResponseEntityHandler** under _exceptions_
 
 ## Starting SpringBoot application and testing REST API
 
