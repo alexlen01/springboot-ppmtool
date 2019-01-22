@@ -1,4 +1,4 @@
-package com.local.ppmtool.web;
+package com.local.ppmtool.controller;
 
 import javax.validation.Valid;
 
@@ -15,8 +15,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.local.ppmtool.domain.Project;
-import com.local.ppmtool.services.MapValidationErrorService;
-import com.local.ppmtool.services.ProjectService;
+import com.local.ppmtool.service.MapValidationErrorService;
+import com.local.ppmtool.service.ProjectService;
 
 @RestController
 @RequestMapping("/api/project")
@@ -30,7 +30,6 @@ public class ProjectController {
 
 	@PostMapping("")
 	public ResponseEntity<?> createNewProject(@Valid @RequestBody Project project, BindingResult result) {
-
 		ResponseEntity<?> errorMap = mapValidationErrorService.checkForErrors(result);
 		if (errorMap != null) {
 			return errorMap;

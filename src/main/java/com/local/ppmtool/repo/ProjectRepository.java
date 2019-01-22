@@ -1,4 +1,4 @@
-package com.local.ppmtool.repositories;
+package com.local.ppmtool.repo;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;

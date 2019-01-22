@@ -1,4 +1,4 @@
-package com.local.ppmtool.services;
+package com.local.ppmtool.service;
 
 import java.util.HashMap;
 import java.util.Map;

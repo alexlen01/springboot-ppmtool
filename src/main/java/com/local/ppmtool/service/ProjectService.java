@@ -1,11 +1,12 @@
-package com.local.ppmtool.services;
+package com.local.ppmtool.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.local.ppmtool.domain.Project;
-import com.local.ppmtool.exceptions.ProjectIdException;
-import com.local.ppmtool.repositories.ProjectRepository;
+import com.local.ppmtool.exception.ProjectIdException;
+import com.local.ppmtool.exception.ProjectNotFoundException;
+import com.local.ppmtool.repo.ProjectRepository;
 
 @Service
 public class ProjectService {
@@ -27,7 +28,7 @@ public class ProjectService {
 		if (project != null) {
 			return project;
 		} else {
-			throw new ProjectIdException("Project ID '" + projectId + "' does not exist!");
+			throw new ProjectNotFoundException("Project ID '" + projectId + "' does not exist!");
 		}
 	}
 
@@ -39,4 +40,5 @@ public class ProjectService {
 		Project project = findProjectByIdentifier(projectId);
 		projectRepository.delete(project);
 	}
+
 }
