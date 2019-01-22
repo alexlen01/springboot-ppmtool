@@ -47,6 +47,41 @@ git merge branch 0
 7. Added custom error handling using **CustomResponseEntityHandler** under _exceptions_
 8. Added remaining CRUD operations for **Project"" entity
 
+### Day 3
+
+9. Added Rest Assured to test **ProjectController** endpoints
+10. Revised project package structure using the following conventions:
+
+```
+config - class which will read from property files
+
+cache - caching mechanism class files
+
+constants - constant defined class
+
+controller - controller class
+
+exception - exception class
+
+model - pojos classes will be present
+
+security - security classes
+
+service - Impl classes
+
+util - utility classes
+
+validation - validators classes
+
+bootloader - main class
+```
+
+
+
+
+
+
+
 ## Starting SpringBoot application and testing REST API
 
 1. Run _com.local.ppmtool.PPMToolApplication_ as **Spring Boot App**
