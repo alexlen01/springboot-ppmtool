@@ -1,4 +1,4 @@
-# FullStackPPMTool
+# PPMTool
 Full Stack Project: Spring Boot 2.0, ReactJS, Redux
 
 ...or create a new repository on the command line
