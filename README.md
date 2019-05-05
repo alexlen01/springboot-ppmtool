@@ -8,13 +8,13 @@ echo "# FullStackPPMTool" >> README.md
 git init
 git add README.md
 git commit -m "first commit"
-git remote add origin https://github.com/alexlen01/FullStackPPMTool.gif
+git remote add origin https://github.com/alexlen01/springboot-ppmtool.git
 git push -u origin master
 ```
 ...or push an existing repository from the command line
 
 ```
-git remove add origin https://github.com/alexlen01/FullStackPPMTool.gif
+git remove add origin https://github.com/alexlen01/springboot-ppmtool.git
 git push -u origin master
 ```
 
