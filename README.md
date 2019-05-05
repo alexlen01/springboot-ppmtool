@@ -31,7 +31,7 @@ git checkout master
 git merge branch 0
 ```
 
-## Daily checkpoints while building FullStackPPMTool:
+## Daily checkpoints while building PPMTool:
 
 ### Day 1
 
